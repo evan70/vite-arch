@@ -1,0 +1,12 @@
+/*@import "tailwindcss/base";*/
+
+/*@import "tailwindcss/components";*/
+
+/* custom */
+
+@import "./_common.css";
+
+/*@import "tailwindcss/utilities";*/
+@import "bootstrap/dist/css/bootstrap-grid.css";
+/*@import "animate.css";*/
+@import "main.scss";
