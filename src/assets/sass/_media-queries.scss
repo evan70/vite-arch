@@ -1,0 +1,173 @@
+@media screen and (max-width: 1080px) {
+  .heading_1 {
+    font-size: 10rem;
+  }
+  .heading_2 {
+    font-size: 6rem;
+  }
+  .heading_3 {
+    font-size: 3rem;
+  }
+  main {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .brands {
+    img {
+      width: 70%;
+      object-fit: contain;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  nav {
+    a {
+      &:not(.logo) {
+        display: none;
+      }
+    }
+  }
+
+  .btn_2 {
+    display: none !important;
+  }
+
+  .heading_1 {
+    font-size: 5rem !important;
+  }
+  .heading_2 {
+    font-size: 4rem;
+  }
+  .heading_3 {
+    font-size: 2.5rem;
+  }
+  .section_heading {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .btn_2 {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+      }
+    }
+    p {
+      width: 90%;
+    }
+    .heading_2 {
+      text-align: center !important;
+    }
+  }
+  .rating {
+    .section_heading {
+      .heading_2 {
+        margin-bottom: 3rem;
+      }
+    }
+    .image-card {
+      height: 30rem !important;
+    }
+  }
+  .about {
+    .card {
+      height: 30rem;
+    }
+  }
+  .stats {
+    width: 100% !important;
+  }
+  .showcases {
+    .showcase {
+      margin-bottom: 2rem;
+      border-bottom: none !important;
+      .heading_3 {
+        margin-block: 2rem;
+      }
+      img {
+        height: 20rem;
+        object-fit: contain;
+        margin-block: 2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .intro {
+    padding-block: 0;
+  }
+  .heading_1 {
+    font-size: 6rem;
+    margin-top: 2rem !important;
+  }
+  .brand-holder {
+    border-right: none !important;
+    height: 15rem !important;
+  }
+  .brands {
+    .brand-image {
+      img {
+        width: 40%;
+      }
+    }
+  }
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    >div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .heading_3 {
+      margin-top: 5rem;
+    }
+    .logo {
+      margin-right: initial;
+    }
+  }
+  .animated {
+    animation-delay: 0s !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  nav {
+    a.btn_1 {
+      display: none;
+    }
+  }
+  .heading_1 {
+    font-size: 5rem;
+  }
+  .heading_2 {
+    font-size: 3rem;
+  }
+  .heading_3 {
+    font-size: 2rem;
+  }
+  .stats {
+    flex-direction: column;
+    height: fit-content;
+    gap: 2rem;
+    width: 50%;
+    text-align: center;
+  }
+}
