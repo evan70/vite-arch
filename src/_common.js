@@ -55,7 +55,7 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
-const menu = document.querySelector(".menu");
+const menu = document.querySelector(".container");
 const menuContainer = document.querySelector(".menu_container");
 let menuToggle = false;
 menu.addEventListener("click", ()=>{
@@ -70,4 +70,3 @@ menu.addEventListener("click", ()=>{
     
     menuToggle = !menuToggle
 })
-
