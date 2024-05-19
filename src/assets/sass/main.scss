@@ -1,0 +1,454 @@
+// Imports
+//@import 'colors';
+@import 'fonts';
+@import 'media-queries';
+@import 'hamburger-btn';
+/* Headings */
+/* Headings */
+/* Buttons */
+/* Buttons */
+/* Page */
+/* Page */
+/* Media Queries */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family_1;
+  font-weight: 500;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+    }
+}
+
+
+body {
+  font-size: 1.6rem;
+  background: #9f9f9f;
+  color: $color_1;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: $color_2;
+}
+
+
+.btn_1 {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  border: 1px solid #494b4c;
+  border-bottom-color: $border-bottom-color_1;
+  color: $color_6;
+  background: linear-gradient(to top, #15181a 15%, #333638 85%, #3a3d3f);
+}
+.btn_2 {
+  color: $color_7;
+  font-family: $font-family_3;
+  font-size: 2.4rem;
+  display: flex;
+  width: fit-content;
+  &::after {
+    content: "";
+    background-image: url('https://epithemic.sirv.com/responsive/icons/circle-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 3rem;
+    display: inline-block;
+    margin-left: 1rem;
+    transition: 0.3s ease;
+  }
+  &:hover {
+    &::after {
+      transform: rotate(-25deg) scale(1.1);
+    }
+  }
+}
+main {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
+}
+nav {
+  background: #15181a;
+  .container-xl {
+    display: flex;
+    align-items: center;
+    color: $color_8;
+    padding: 2rem 0;
+    gap: 3rem;
+    position: relative;
+  }
+  .btn_1 {
+    margin-left: auto;
+  }
+}
+.logo {
+  margin-right: auto;
+  img {
+    height: 8rem;
+    object-fit: contain;
+  }
+}
+.menu {
+  position: relative;
+  z-index: 20;
+  cursor: pointer;
+  img {
+    width: 2.8rem;
+    object-fit: contain;
+    opacity: 0.8;
+  }
+}
+.menu_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #333638;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  transform: translateX(100%);
+  transition: 1s ease;
+  overflow: hidden;
+  a {
+    &:not(.btn_1) {
+      font-size: 5rem;
+      font-weight: bold;
+      color: $color_7;
+      font-family: $font-family_3;
+      display: inline-block !important;
+      &:hover {
+        color: $color_9;
+      }
+    }
+  }
+  .btn_1 {
+    margin-left: 0;
+    display: inline-block !important;
+  }
+}
+.intro {
+  background: url("https://epithemic.sirv.com/responsive/mix/1.jpg") no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  .heading_1 {
+    position: relative;
+    margin-top: 10rem;
+    z-index: 2;
+  }
+  p {
+    position: relative;
+    margin-top: 4rem;
+    z-index: 2;
+    width: 38ch;
+    max-width: 100%;
+  }
+  .btn_2 {
+    position: relative;
+    z-index: 2;
+    margin-block: 6rem;
+  }
+}
+.projects {
+  display: flex;
+  gap: 4rem;
+  margin-top: 4rem;
+  .project {
+    height: 18rem;
+    width: 15rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: 0.3s ease;
+    }
+    &:hover {
+      img {
+        transform: rotate(-5deg) scale(1.5);
+      }
+    }
+  }
+}
+section {
+  background: linear-gradient(to right, #1f2327, #35383a);
+  padding-block: 10rem;
+}
+.about {
+  .section_heading {
+    .heading_2 {
+      text-align: right;
+    }
+  }
+  .row {
+    margin-top: 6rem;
+  }
+  .card {
+    height: 50rem;
+    width: 100%;
+    background: linear-gradient(45deg, #34373b, #5a5d60);
+    border-radius: 1rem;
+    border: 1px solid #777777;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .card_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-size: 5rem;
+      font-weight: bold;
+      font-family: $font-family_3;
+      color: $color_7;
+    }
+    .icon {
+      img {
+        height: 5rem;
+        object-fit: contain;
+      }
+    }
+  }
+  .card_body {
+    margin-top: auto;
+    .heading_3 {
+      margin-bottom: 2rem;
+    }
+  }
+  .card4_bg {
+    background: linear-gradient(45deg, #101112a1, #5a5d607c), url("https://epithemic.sirv.com/responsive/mix/3.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 0;
+  }
+  .card1_bg {
+    background: linear-gradient(90deg, #101112a1, #5a5d607c), url("https://epithemic.sirv.com/responsive/mix/8.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 0;
+  }
+  .card_bg {
+    .card_body {
+      p {
+        color: $color_7;
+      }
+    }
+  }
+}
+section.rating {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.stats {
+  height: 15rem;
+  width: 60%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(45deg, #34373b, #5a5d60);
+  margin-inline: auto;
+  margin-top: 5rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .heading_3 {
+    span {
+      font-family: $font-family_2;
+      font-size: 4.8rem;
+      font-weight: bold;
+    }
+    color: $color_10;
+  }
+}
+.rating {
+  .row {
+    margin-top: 6rem;
+  }
+  .image-card {
+    height: 60rem;
+    overflow: hidden;
+    &:nth-child(2) {
+      height: 50rem;
+      align-self: flex-end;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+section.portfolio {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.portfolio {
+  .section_heading {
+    flex-direction: column;
+    text-align: center;
+    p {
+      width: auto;
+      margin-top: 5rem;
+    }
+  }
+}
+.showcases {
+  margin-top: 8rem;
+  .showcase {
+    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    &:last-child {
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      margin-inline: auto;
+      transition: 0.3s ease;
+    }
+    .heading_3 {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.6;
+      transition: 0.3s ease;
+    }
+    &:hover {
+      .heading_3 {
+        opacity: 1;
+      }
+      img {
+        transform: rotate(-5deg) scale(1.5);
+      }
+    }
+  }
+}
+
+.brands {
+  padding-bottom: 0;
+  .section_heading {
+    .heading_2 {
+      text-align: right;
+    }
+  }
+  .row {
+    margin-top: 8rem;
+  }
+  .brand-holder {
+    height: 30rem;
+    border: 1px solid #fff;
+    &:hover {
+      .brand-image {
+        border: 1px solid #fff;
+        background: #595c5d;
+      }
+    }
+  }
+  .brand-image {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    filter: invert(100%);
+    width: 30rem;
+    max-width: 80%;
+  }
+}
+
+.brand-holder {
+  &:nth-child(n + 5) {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+footer {
+  background: #171719;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  hr {
+    margin-top: 5rem;
+    border-color: $border-color_1;
+  }
+  small {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    opacity: 0.9;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    margin-top: 5rem;
+  }
+  span {
+    display: flex;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    a {
+      font-family: $font-family_3;
+      color: $color_7;
+    }
+  }
+}
+.input_container {
+  border: 1px solid #ffffff7a;
+  display: flex;
+  border-radius: 3rem;
+  padding: 0.2rem;
+  margin-top: 2rem;
+  input {
+    border-radius: 2rem;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 1rem 3rem;
+    color: $color_7;
+    font-size: 1.6rem;
+    &::placeholder {
+      color: $color_7;
+      font-size: 1.4rem;
+      font-family: $font-family_3;
+    }
+  }
+}
