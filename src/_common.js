@@ -55,7 +55,7 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
-const menu = document.querySelector(".container");
+const menu = document.querySelector(".menu");
 const menuContainer = document.querySelector(".menu_container");
 let menuToggle = false;
 menu.addEventListener("click", ()=>{
@@ -67,6 +67,6 @@ menu.addEventListener("click", ()=>{
         menuContainer.style.transform = "translateX(100%)";
         lenis.start();
     }
-    
+
     menuToggle = !menuToggle
 })
