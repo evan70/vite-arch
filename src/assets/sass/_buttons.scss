@@ -1,0 +1,32 @@
+.btn_1 {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  border: 1px solid #494b4c;
+  border-bottom-color: $border-bottom-color_1;
+  color: $color_6;
+  background: linear-gradient(to top, #15181a 15%, #333638 85%, #3a3d3f);
+}
+.btn_2 {
+  color: $color_7;
+  font-family: $font-family_3;
+  font-size: 2.4rem;
+  display: flex;
+  width: fit-content;
+  &::after {
+    content: "";
+    background-image: url('https://epithemic.sirv.com/responsive/icons/circle-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 3rem;
+    display: inline-block;
+    margin-left: 1rem;
+    transition: 0.3s ease;
+  }
+  &:hover {
+    &::after {
+      transform: rotate(-25deg) scale(1.1);
+    }
+  }
+}

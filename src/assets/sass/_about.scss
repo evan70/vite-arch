@@ -1,0 +1,60 @@
+.about {
+  .section_heading {
+    .heading_2 {
+      text-align: right;
+    }
+  }
+  .row {
+    margin-top: 6rem;
+  }
+  .card {
+    height: 50rem;
+    width: 100%;
+    background: linear-gradient(45deg, #34373b, #5a5d60);
+    border-radius: 1rem;
+    border: 1px solid #777777;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .card_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-size: 5rem;
+      font-weight: bold;
+      font-family: $font-family_3;
+      color: $color_7;
+    }
+    .icon {
+      img {
+        height: 5rem;
+        object-fit: contain;
+      }
+    }
+  }
+  .card_body {
+    margin-top: auto;
+    .heading_3 {
+      margin-bottom: 2rem;
+    }
+  }
+  .card4_bg {
+    background: linear-gradient(45deg, #101112a1, #5a5d607c), url("https://epithemic.sirv.com/responsive/mix/3.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 0;
+  }
+  .card1_bg {
+    background: linear-gradient(90deg, #101112a1, #5a5d607c), url("https://epithemic.sirv.com/responsive/mix/8.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 0;
+  }
+  .card_bg {
+    .card_body {
+      p {
+        color: $color_7;
+      }
+    }
+  }
+}
